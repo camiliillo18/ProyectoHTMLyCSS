@@ -1,326 +1,716 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
-</head>
-<body>
-<header>
-    <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/logo-1x.png" alt="Logo de la empresa Filmax">
-    <nav>
-        <ul>
-            <li> <a href="#Home">#Home</a> </li>
-            <li> <a href="#Features">#Features</a> </li>
-            <li> <a href="#About">#About</a> </li>
-            <li> <a href="#News">#News</a> </li>
-            <li> <a href="#Contact">#Contact</a> </li>
-        </ul>
-    </nav>
-    <search>
-        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="50" height="50"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/></svg>
-    </search>
-    <span>|</span>
-    <nav>
-        <ul>
-            <li> <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" viewBox="0 0 24 24" width="50" height="50">
-                <polygon points="6.861 6.159 15.737 17.764 17.097 17.764 8.322 6.159 6.861 6.159"/>
-                <path d="m12,0C5.373,0,0,5.373,0,12s5.373,12,12,12,12-5.373,12-12S18.627,0,12,0Zm3.063,19.232l-3.87-5.055-4.422,5.055h-2.458l5.733-6.554-6.046-7.91h5.062l3.494,4.621,4.043-4.621h2.455l-5.361,6.126,6.307,8.337h-4.937Z"/>
-              </svg></a> </li>
-            <li> <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="50" height="50">
-                <g>
-                    <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
-                </g>
-                </svg>
-                </a> </li>
-            <li> <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="50" height="50">
-                <g>
-                    <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
-                    <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"/>
-                    <circle cx="18.406" cy="5.594" r="1.44"/>
-                </g>
-                </svg></a> </li>
-            <li> <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="50" height="50">
-                <g id="XMLID_184_">
-                    <path d="M23.498,6.186c-0.276-1.039-1.089-1.858-2.122-2.136C19.505,3.546,12,3.546,12,3.546s-7.505,0-9.377,0.504   C1.591,4.328,0.778,5.146,0.502,6.186C0,8.07,0,12,0,12s0,3.93,0.502,5.814c0.276,1.039,1.089,1.858,2.122,2.136   C4.495,20.454,12,20.454,12,20.454s7.505,0,9.377-0.504c1.032-0.278,1.845-1.096,2.122-2.136C24,15.93,24,12,24,12   S24,8.07,23.498,6.186z M9.546,15.569V8.431L15.818,12L9.546,15.569z"/>
-                </g>
-                </svg>
-                </a> </li>
-        </ul>
-    </nav>
-</header>
-   <main>
-    <section>
+  </head>
+  <body>
+    <div class="layout-width">
+      <header class="header">
+        <img
+          src="https://filmax.themerex.net/wp-content/uploads/2017/12/logo-1x.png"
+          alt="Logo de la empresa Filmax"
+        />
+        <nav class="main-menu">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="main-tools">
+          <search>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+            >
+              <path
+                d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"
+              />
+            </svg>
+          </search>
+          <span>|</span>
+          <nav>
+            <ul>
+              <li>
+                <a href="#" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Capa_1"
+                    data-name="Capa 1"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                  >
+                    <polygon
+                      points="6.861 6.159 15.737 17.764 17.097 17.764 8.322 6.159 6.861 6.159"
+                    />
+                    <path
+                      d="m12,0C5.373,0,0,5.373,0,12s5.373,12,12,12,12-5.373,12-12S18.627,0,12,0Zm3.063,19.232l-3.87-5.055-4.422,5.055h-2.458l5.733-6.554-6.046-7.91h5.062l3.494,4.621,4.043-4.621h2.455l-5.361,6.126,6.307,8.337h-4.937Z"
+                    /></svg></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 24 24"
+                    style="enable-background: new 0 0 24 24"
+                    xml:space="preserve"
+                    width="20"
+                    height="20"
+                  >
+                    <g>
+                      <path
+                        d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 24 24"
+                    style="enable-background: new 0 0 24 24"
+                    xml:space="preserve"
+                    width="20"
+                    height="20"
+                  >
+                    <g>
+                      <path
+                        d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"
+                      />
+                      <path
+                        d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"
+                      />
+                      <circle cx="18.406" cy="5.594" r="1.44" />
+                    </g></svg></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 24 24"
+                    style="enable-background: new 0 0 24 24"
+                    xml:space="preserve"
+                    width="20"
+                    height="20"
+                  >
+                    <g id="XMLID_184_">
+                      <path
+                        d="M23.498,6.186c-0.276-1.039-1.089-1.858-2.122-2.136C19.505,3.546,12,3.546,12,3.546s-7.505,0-9.377,0.504   C1.591,4.328,0.778,5.146,0.502,6.186C0,8.07,0,12,0,12s0,3.93,0.502,5.814c0.276,1.039,1.089,1.858,2.122,2.136   C4.495,20.454,12,20.454,12,20.454s7.505,0,9.377-0.504c1.032-0.278,1.845-1.096,2.122-2.136C24,15.93,24,12,24,12   S24,8.07,23.498,6.186z M9.546,15.569V8.431L15.818,12L9.546,15.569z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <main>
+     <div class="layout-width">
+      <section class="news">
         <article>
-            <img src="https://filmax.themerex.net/wp-content/uploads/2018/01/top-promo.jpg" alt="Foto de hombre con camara">
-            <h1>Tyler Perry's madea halloween</h1>
-            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+          <img
+            src="https://filmax.themerex.net/wp-content/uploads/2018/01/top-promo.jpg"
+            alt="Foto de hombre con camara"
+          />
+          <div class="news-data">
+          <h1>Tyler Perry's madea halloween</h1>
+          <p>
+            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium
+          </p>
+        </div>
         </article>
         <aside>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright-97x81.jpg" alt="niño gafas realidad virtual">
-                <h1>Attending ‘Star Wars’ Screening in ‘Star Trek’ Costume</h1>
+            <p>Recent News</p>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright-97x81.jpg"
+              alt="niño gafas realidad virtual"
+            />
+            <div>
+                <h1>Attending 'Star Wars' Screening in 'Star Trek' Costume</h1>
                 <time>ON DEC 15, 2017</time>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright-97x81.jpg" alt="hombre con camara">
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright-97x81.jpg"
+              alt="hombre con camara"
+            />
+            <div>
                 <h1>Reuniting at the 2018 Coachella Music Festival</h1>
                 <time>ON DEC 12, 2017</time>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright-97x81.jpg" alt="personas gafas realidad virtual y palomitas">
-                <h1>‘Titanic’, ‘Goonies’ Named National Film Treasures</h1>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright-97x81.jpg"
+              alt="personas gafas realidad virtual y palomitas"
+            />
+            <div>
+                <h1>'Titanic', 'Goonies' Named National Film Treasures</h1>
                 <time>ON DEC 8, 2017</time>
-            </article>
+            </div>
+          </article>
         </aside>
-    </section>
-    <section>
+      </section>
+     </div>
+      <section>
         <nav>
-            <ul>
-                <li>
-                    <a href="">Recent trailers</a>
-                </li>
-                <li>
-                    <a href="">Most populars</a>
-                </li>
-                <li>
-                    <a href="">Best</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="">Recent trailers</a>
+            </li>
+            <li>
+              <a href="">Most populars</a>
+            </li>
+            <li>
+              <a href="">Best</a>
+            </li>
+          </ul>
         </nav>
         <article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-17-copyright-485x665.jpg" alt="Mujer con prismaticos">
-                <h1>Stranger Things</h1>
-                <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-18-copyright-485x665.jpg" alt="Hombre fuerzas especiales">
-                <h1>The Injustice</h1>
-                <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-19-copyright-485x665.jpg" alt="Espada">
-                <h1>Geostorm</h1>
-                <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-20-copyright-485x665.jpg" alt="Superman copia">
-                <h1>Happy Death Day</h1>
-                <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-21-copyright-485x665.jpg" alt="Hombre de la epoca romana">
-                <h1>Gotham</h1>
-                <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
-            </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-17-copyright-485x665.jpg"
+              alt="Mujer con prismaticos"
+            />
+            <h1>Stranger Things</h1>
+            <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-18-copyright-485x665.jpg"
+              alt="Hombre fuerzas especiales"
+            />
+            <h1>The Injustice</h1>
+            <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-19-copyright-485x665.jpg"
+              alt="Espada"
+            />
+            <h1>Geostorm</h1>
+            <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-20-copyright-485x665.jpg"
+              alt="Superman copia"
+            />
+            <h1>Happy Death Day</h1>
+            <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-21-copyright-485x665.jpg"
+              alt="Hombre de la epoca romana"
+            />
+            <h1>Gotham</h1>
+            <a href="">Drama, </a><a href="">Accion, </a><a href="">Suspense</a>
+          </article>
         </article>
-    </section>
-    <section>
+      </section>
+      <section>
         <article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458" alt="Imagen Samurai ">
-            </article>
-            <article>
-                <span>-</span>
-                <h1>New Releases</h1>
-                <h2>The Last Samurai</h2>
-                <h3>HBO Series 2 Seasons</h3>
-                <p>The Last Samurai is a 2003 American epic period drama war film directed and co-produced by Edward Zwick, who also co-wrote the screenplay with John Logan and Marshall Herskovitz. The film stars Tom Cruise, who also co-produced.</p>
-                <a href="">View more information</a><a href="">Watch Trailer</a>
-            </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458"
+              alt="Imagen Samurai "
+            />
+          </article>
+          <article>
+            <span>-</span>
+            <h1>New Releases</h1>
+            <h2>The Last Samurai</h2>
+            <h3>HBO Series 2 Seasons</h3>
+            <p>
+              The Last Samurai is a 2003 American epic period drama war film
+              directed and co-produced by Edward Zwick, who also co-wrote the
+              screenplay with John Logan and Marshall Herskovitz. The film stars
+              Tom Cruise, who also co-produced.
+            </p>
+            <a href="">View more information</a><a href="">Watch Trailer</a>
+          </article>
         </article>
-    </section>
-    <section>
+      </section>
+      <section>
         <article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-27-copyright-485x665.jpg" alt="Monstruo de fuego">
-                <h1>Inferno</h1>
-                <a href="">Adventure</a>
-                <div>
-                <button>Watch Trailer</button><a href="">More Information</a>
-                </div>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-25-copyright-485x665.jpg" alt="Avion volando encima de un bosque">
-                <h1>Band of Brothers</h1>
-                <a href="">Adventure</a>  
-                <div>
-                    <button>Watch Trailer</button><a href="">More Information</a>
-                </div>            
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-29-copyright-485x665.jpg" alt="Hombre Gladiador">
-                <h1>Gladiator</h1>
-                <a href="">Action / Adventure</a>
-                <div>
-                    <button>Watch Trailer</button><a href="">More Information</a>
-                </div>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg" alt="Barco en alta mar">
-                <h1>Pirates Bay</h1>
-                <a href="">Action / Adventure</a>
-                <div>
-                    <button>Watch Trailer</button><a href="">More Information</a>
-                </div>
-            </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-27-copyright-485x665.jpg"
+              alt="Monstruo de fuego"
+            />
+            <h1>Inferno</h1>
+            <a href="">Adventure</a>
+            <div>
+              <button>Watch Trailer</button><a href="">More Information</a>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-25-copyright-485x665.jpg"
+              alt="Avion volando encima de un bosque"
+            />
+            <h1>Band of Brothers</h1>
+            <a href="">Adventure</a>
+            <div>
+              <button>Watch Trailer</button><a href="">More Information</a>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-29-copyright-485x665.jpg"
+              alt="Hombre Gladiador"
+            />
+            <h1>Gladiator</h1>
+            <a href="">Action / Adventure</a>
+            <div>
+              <button>Watch Trailer</button><a href="">More Information</a>
+            </div>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg"
+              alt="Barco en alta mar"
+            />
+            <h1>Pirates Bay</h1>
+            <a href="">Action / Adventure</a>
+            <div>
+              <button>Watch Trailer</button><a href="">More Information</a>
+            </div>
+          </article>
         </article>
-    </section>
-    <section>
+      </section>
+      <section>
         <article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/1test-copyright-105x105.jpg" alt="Foto de Martin Moore">
-                <blockquote>
-                    <q>“ I appreciate the high quality of your products guys! ”</q>
-                    <b>Martin Moore</b>
-                    <span>Film Expert</span>
-                </blockquote>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2018/01/team-11-copyright-105x105.jpg" alt="Foto de Lisa Morrison">
-                <blockquote>
-                    <q>“ It was so much fun for all of my friends and family. ”</q>
-                    <b>Lisa Morrison</b>
-                    <span>Film Expert</span>
-                </blockquote>
-            </article>
-            <article>
-                <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/2test-copyright-105x105.jpg" alt="Foto de Andrea Garcia">
-                <blockquote>
-                    <q>“ Everything is great about this website, we liked it. ”</q>
-                    <b>Andrea Garcia</b>
-                    <span>Film Expert</span>
-                </blockquote>
-            </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/1test-copyright-105x105.jpg"
+              alt="Foto de Martin Moore"
+            />
+            <blockquote>
+              <q>“ I appreciate the high quality of your products guys! ”</q>
+              <b>Martin Moore</b>
+              <span>Film Expert</span>
+            </blockquote>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2018/01/team-11-copyright-105x105.jpg"
+              alt="Foto de Lisa Morrison"
+            />
+            <blockquote>
+              <q>“ It was so much fun for all of my friends and family. ”</q>
+              <b>Lisa Morrison</b>
+              <span>Film Expert</span>
+            </blockquote>
+          </article>
+          <article>
+            <img
+              src="https://filmax.themerex.net/wp-content/uploads/2017/12/2test-copyright-105x105.jpg"
+              alt="Foto de Andrea Garcia"
+            />
+            <blockquote>
+              <q>“ Everything is great about this website, we liked it. ”</q>
+              <b>Andrea Garcia</b>
+              <span>Film Expert</span>
+            </blockquote>
+          </article>
         </article>
-    </section>
-    <section>
+      </section>
+      <section>
         <article>
-            <article>
-                <h1>Latest News</h1>
-                <h2>Stay tuned for all the latest entertainment news and TV premiers</h2>
-            </article>
-            <article>
-                <a href=""><img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright.jpg" alt="Hombre con niña en un sofa riendo"></a>
-                <div>
-                    <a href="">Home Grid, </a><a href="">News & Updates</a>
-                </div>
-                <h1>9 FILMS ARE VYING FOR FOREIGN OSCAR NOMINATION</h1>
-                <div>
-                    <a href=""><time>ON DEC 4, 2017</time></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"/><path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z"/><path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/><path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/></svg></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><g id="_01_align_center" data-name="01 align center"><path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"/></g></svg></a>
-                </div>
-            </article>
-            <article>
-                <a href=""><img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright.jpg" alt="Dos niños con gafas de realidad virtual"></a>
-                <div>
-                    <a href="">Home Grid, </a><a href="">News & Updates</a>
-                </div>
-                <h1>‘TITANIC’, ‘GOONIES’ NAMED NATIONAL FILM TREASURES</h1>
-                <div>
-                    <a href=""><time>ON DEC 8, 2017</time></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"/><path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z"/><path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/><path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/></svg></a>
-                </div>
-            </article>
-            <article>
-                <a href=""><img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright.jpg" alt="Hombre con una camara sonriendo"></a>
-                <div>
-                    <a href="">Home Grid, </a><a href="">News & Updates</a>
-                </div>
-                <h1>REUNITING AT THE 2018 COACHELLA MUSIC FESTIVAL</h1>
-                <div>
-                    <a href=""><time>ON DEC 12, 2017</time></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"/><path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z"/><path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/><path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/></svg></a>
-                </div>
-            </article>
-            <article>
-                <a href=""><img src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright.jpg" alt="Niño con gafas de realidad virtual y sus padres detras"></a>
-                <div>
-                    <a href="">Home Grid, </a><a href="">News & Updates</a>
-                </div>
-                <h1>ATTENDING ‘STAR WARS’ SCREENING IN ‘STAR TREK’ COSTUME</h1>
-                <div>
-                    <a href=""><time>ON DEC 15, 2017</time></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"/><path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z"/><path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/><path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"/></svg></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><g id="_01_align_center" data-name="01 align center"><path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"/></g></svg></a>
-                </div>
-            </article>
-            <article>
-                <button>Browse more news</button>
-            </article>
+          <article>
+            <h1>Latest News</h1>
+            <h2>
+              Stay tuned for all the latest entertainment news and TV premiers
+            </h2>
+          </article>
+          <article>
+            <a href=""
+              ><img
+                src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright.jpg"
+                alt="Hombre con niña en un sofa riendo"
+            /></a>
+            <div><a href="">Home Grid, </a><a href="">News & Updates</a></div>
+            <h1>9 FILMS ARE VYING FOR FOREIGN OSCAR NOMINATION</h1>
+            <div>
+              <a href=""><time>ON DEC 4, 2017</time></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Outline"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                >
+                  <path
+                    d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"
+                  />
+                  <path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z" />
+                  <path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+                  <path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" /></svg></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                >
+                  <g id="_01_align_center" data-name="01 align center">
+                    <path
+                      d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"
+                    />
+                  </g></svg></a>
+            </div>
+          </article>
+          <article>
+            <a href=""
+              ><img
+                src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright.jpg"
+                alt="Dos niños con gafas de realidad virtual"
+            /></a>
+            <div><a href="">Home Grid, </a><a href="">News & Updates</a></div>
+            <h1>‘TITANIC’, ‘GOONIES’ NAMED NATIONAL FILM TREASURES</h1>
+            <div>
+              <a href=""><time>ON DEC 8, 2017</time></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Outline"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                >
+                  <path
+                    d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"
+                  />
+                  <path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z" />
+                  <path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+                  <path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" /></svg></a>
+            </div>
+          </article>
+          <article>
+            <a href=""
+              ><img
+                src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright.jpg"
+                alt="Hombre con una camara sonriendo"
+            /></a>
+            <div><a href="">Home Grid, </a><a href="">News & Updates</a></div>
+            <h1>REUNITING AT THE 2018 COACHELLA MUSIC FESTIVAL</h1>
+            <div>
+              <a href=""><time>ON DEC 12, 2017</time></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Outline"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                >
+                  <path
+                    d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"
+                  />
+                  <path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z" />
+                  <path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+                  <path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" /></svg></a>
+            </div>
+          </article>
+          <article>
+            <a href=""
+              ><img
+                src="https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright.jpg"
+                alt="Niño con gafas de realidad virtual y sus padres detras"
+            /></a>
+            <div><a href="">Home Grid, </a><a href="">News & Updates</a></div>
+            <h1>ATTENDING ‘STAR WARS’ SCREENING IN ‘STAR TREK’ COSTUME</h1>
+            <div>
+              <a href=""><time>ON DEC 15, 2017</time></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Outline"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                >
+                  <path
+                    d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"
+                  />
+                  <path d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7Z" />
+                  <path d="M17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+                  <path d="M17,13H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" /></svg></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                >
+                  <g id="_01_align_center" data-name="01 align center">
+                    <path
+                      d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"
+                    />
+                  </g></svg></a>
+            </div>
+          </article>
+          <article>
+            <button>Browse more news</button>
+          </article>
         </article>
-    </section>
-   </main>
-   <footer>
-    <div>
-        <img src="https://filmax.themerex.net/wp-content/uploads/2017/12/logo-1x.png" alt="">
-        <p><a href="https://themerex.net/">ThemeREX</a>© 2023. All rights reserved.</p>
-    </div>
-    <div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <img
+          src="https://filmax.themerex.net/wp-content/uploads/2017/12/logo-1x.png"
+          alt=""
+        />
+        <p>
+          <a href="https://themerex.net/">ThemeREX</a>© 2023. All rights
+          reserved.
+        </p>
+      </div>
+      <div>
         <p>Movies</p>
         <ul>
-            <li><a href="https://filmax.themerex.net/category/film-news/">Film News</a></li>
-            <li><a href="https://filmax.themerex.net/category/action/">Action</a></li>
-            <li><a href="https://filmax.themerex.net/category/coming-soon/">Coming Soon</a></li>
-            <li><a href="https://filmax.themerex.net/category/most-popular/">Most Popular</a></li>
-            <li><a href="https://filmax.themerex.net/category/top-trailers/">Top Trailers</a></li>
+          <li>
+            <a href="https://filmax.themerex.net/category/film-news/"
+              >Film News</a
+            >
+          </li>
+          <li>
+            <a href="https://filmax.themerex.net/category/action/">Action</a>
+          </li>
+          <li>
+            <a href="https://filmax.themerex.net/category/coming-soon/"
+              >Coming Soon</a
+            >
+          </li>
+          <li>
+            <a href="https://filmax.themerex.net/category/most-popular/"
+              >Most Popular</a
+            >
+          </li>
+          <li>
+            <a href="https://filmax.themerex.net/category/top-trailers/"
+              >Top Trailers</a
+            >
+          </li>
         </ul>
-    </div>
-    <div>
+      </div>
+      <div>
         <p>Additional Links</p>
         <ul>
-            <li><a href="https://filmax.themerex.net/about-us/">About</a></li>
-            <li><a href="https://filmax.themerex.net/gallery/">Gallery</a></li>
-            <li><a href="https://filmax.themerex.net/service-plus/">Service Plus</a></li>
-            <li><a href="https://filmax.themerex.net/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="https://filmax.themerex.net/contacts/">Contacts</a></li>
+          <li><a href="https://filmax.themerex.net/about-us/">About</a></li>
+          <li><a href="https://filmax.themerex.net/gallery/">Gallery</a></li>
+          <li>
+            <a href="https://filmax.themerex.net/service-plus/">Service Plus</a>
+          </li>
+          <li>
+            <a href="https://filmax.themerex.net/privacy-policy/"
+              >Privacy Policy</a
+            >
+          </li>
+          <li><a href="https://filmax.themerex.net/contacts/">Contacts</a></li>
         </ul>
-    </div>
-    <div>
+      </div>
+      <div>
         <p>Newsletter</p>
-        <input type="email" placeholder="Newsletter sign up" size="40" title="Completa este campo" name="mail" required/>
+        <input
+          type="email"
+          placeholder="Newsletter sign up"
+          size="40"
+          title="Completa este campo"
+          name="mail"
+          required
+        />
         <nav>
-            <ul>
-                <li> <a href="https://twitter.com/ThemerexThemes" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" viewBox="0 0 24 24" width="50" height="50">
-                    <polygon points="6.861 6.159 15.737 17.764 17.097 17.764 8.322 6.159 6.861 6.159"/>
-                    <path d="m12,0C5.373,0,0,5.373,0,12s5.373,12,12,12,12-5.373,12-12S18.627,0,12,0Zm3.063,19.232l-3.87-5.055-4.422,5.055h-2.458l5.733-6.554-6.046-7.91h5.062l3.494,4.621,4.043-4.621h2.455l-5.361,6.126,6.307,8.337h-4.937Z"/>
-                  </svg></a> </li>
-                <li> <a href="https://www.facebook.com/ThemeRexStudio/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="50" height="50">
-                    <g>
-                        <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
-                    </g>
-                    </svg>
-                    </a> </li>
-                <li> <a href="https://www.instagram.com/themerex_net/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="50" height="50">
-                    <g>
-                        <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
-                        <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"/>
-                        <circle cx="18.406" cy="5.594" r="1.44"/>
-                    </g>
-                    </svg></a> </li>
-                <li> <a href="https://www.youtube.com/channel/UCnFisBimrK2aIE-hnY70kCA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="50" height="50">
-                    <g id="XMLID_184_">
-                        <path d="M23.498,6.186c-0.276-1.039-1.089-1.858-2.122-2.136C19.505,3.546,12,3.546,12,3.546s-7.505,0-9.377,0.504   C1.591,4.328,0.778,5.146,0.502,6.186C0,8.07,0,12,0,12s0,3.93,0.502,5.814c0.276,1.039,1.089,1.858,2.122,2.136   C4.495,20.454,12,20.454,12,20.454s7.505,0,9.377-0.504c1.032-0.278,1.845-1.096,2.122-2.136C24,15.93,24,12,24,12   S24,8.07,23.498,6.186z M9.546,15.569V8.431L15.818,12L9.546,15.569z"/>
-                    </g>
-                    </svg>
-                    </a> </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="https://twitter.com/ThemerexThemes" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  data-name="Capa 1"
+                  viewBox="0 0 24 24"
+                  width="50"
+                  height="50"
+                >
+                  <polygon
+                    points="6.861 6.159 15.737 17.764 17.097 17.764 8.322 6.159 6.861 6.159"
+                  />
+                  <path
+                    d="m12,0C5.373,0,0,5.373,0,12s5.373,12,12,12,12-5.373,12-12S18.627,0,12,0Zm3.063,19.232l-3.87-5.055-4.422,5.055h-2.458l5.733-6.554-6.046-7.91h5.062l3.494,4.621,4.043-4.621h2.455l-5.361,6.126,6.307,8.337h-4.937Z"
+                  /></svg></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ThemeRexStudio/" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 24 24"
+                  xml:space="preserve"
+                  width="50"
+                  height="50"
+                >
+                  <g>
+                    <path
+                      d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/themerex_net/" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 24 24"
+                  xml:space="preserve"
+                  width="50"
+                  height="50"
+                >
+                  <g>
+                    <path
+                      d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"
+                    />
+                    <path
+                      d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"
+                    />
+                    <circle cx="18.406" cy="5.594" r="1.44" />
+                  </g></svg></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCnFisBimrK2aIE-hnY70kCA"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 24 24"
+                  xml:space="preserve"
+                  width="50"
+                  height="50"
+                >
+                  <g id="XMLID_184_">
+                    <path
+                      d="M23.498,6.186c-0.276-1.039-1.089-1.858-2.122-2.136C19.505,3.546,12,3.546,12,3.546s-7.505,0-9.377,0.504   C1.591,4.328,0.778,5.146,0.502,6.186C0,8.07,0,12,0,12s0,3.93,0.502,5.814c0.276,1.039,1.089,1.858,2.122,2.136   C4.495,20.454,12,20.454,12,20.454s7.505,0,9.377-0.504c1.032-0.278,1.845-1.096,2.122-2.136C24,15.93,24,12,24,12   S24,8.07,23.498,6.186z M9.546,15.569V8.431L15.818,12L9.546,15.569z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
-    </div>
-   </footer>
-   <div>
-    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><g id="_01_align_center" data-name="01 align center"><path d="M22.586,18.148,12.707,8.269a1.021,1.021,0,0,0-1.414,0L1.42,18.142.006,16.728,9.879,6.855a3.073,3.073,0,0,1,4.243,0L24,16.734Z"/></g></svg></a>
-   </div>
-   <aside>
+      </div>
+    </footer>
     <div>
-        <a href="https://1.envato.market/zaPmQO" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="50" height="50"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg></a>
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="50" height="50"><path d="M19,0H5A5.006,5.006,0,0,0,0,5V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V5A5.006,5.006,0,0,0,19,0ZM5,2H19a3,3,0,0,1,3,3V19a2.951,2.951,0,0,1-.3,1.285l-9.163-9.163a5,5,0,0,0-7.072,0L2,14.586V5A3,3,0,0,1,5,2ZM5,22a3,3,0,0,1-3-3V17.414l4.878-4.878a3,3,0,0,1,4.244,0L20.285,21.7A2.951,2.951,0,0,1,19,22Z"/><path d="M16,10.5A3.5,3.5,0,1,0,12.5,7,3.5,3.5,0,0,0,16,10.5Zm0-5A1.5,1.5,0,1,1,14.5,7,1.5,1.5,0,0,1,16,5.5Z"/></svg></a>
-        <a href=""><svg id="Layer_1" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m21 1h-18a3 3 0 0 0 -3 3v19h24v-19a3 3 0 0 0 -3-3zm-18 2h18a1 1 0 0 1 1 1v3h-20v-3a1 1 0 0 1 1-1zm-1 18v-12h20v12zm3-9h14v2h-14zm0 4h10v2h-10zm-2-11a1 1 0 1 1 1 1 1 1 0 0 1 -1-1zm3 0a1 1 0 1 1 1 1 1 1 0 0 1 -1-1zm3 0a1 1 0 1 1 1 1 1 1 0 0 1 -1-1z"/></svg></a>
+      <a href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="40"
+          height="40"
+        >
+          <g id="_01_align_center" data-name="01 align center">
+            <path
+              d="M22.586,18.148,12.707,8.269a1.021,1.021,0,0,0-1.414,0L1.42,18.142.006,16.728,9.879,6.855a3.073,3.073,0,0,1,4.243,0L24,16.734Z"
+            />
+          </g></svg></a>
     </div>
-   </aside>
-</body>
+    <aside>
+      <div>
+        <a href="https://1.envato.market/zaPmQO" target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="50"
+            height="50"
+          >
+            <path
+              d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"
+            />
+            <circle cx="7" cy="22" r="2" />
+            <circle cx="17" cy="22" r="2" /></svg></a>
+        <a href=""
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="50"
+            height="50"
+          >
+            <path
+              d="M19,0H5A5.006,5.006,0,0,0,0,5V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V5A5.006,5.006,0,0,0,19,0ZM5,2H19a3,3,0,0,1,3,3V19a2.951,2.951,0,0,1-.3,1.285l-9.163-9.163a5,5,0,0,0-7.072,0L2,14.586V5A3,3,0,0,1,5,2ZM5,22a3,3,0,0,1-3-3V17.414l4.878-4.878a3,3,0,0,1,4.244,0L20.285,21.7A2.951,2.951,0,0,1,19,22Z"
+            />
+            <path
+              d="M16,10.5A3.5,3.5,0,1,0,12.5,7,3.5,3.5,0,0,0,16,10.5Zm0-5A1.5,1.5,0,1,1,14.5,7,1.5,1.5,0,0,1,16,5.5Z"
+            /></svg></a>
+        <a href=""
+          ><svg
+            id="Layer_1"
+            height="50"
+            viewBox="0 0 24 24"
+            width="50"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+          >
+            <path
+              d="m21 1h-18a3 3 0 0 0 -3 3v19h24v-19a3 3 0 0 0 -3-3zm-18 2h18a1 1 0 0 1 1 1v3h-20v-3a1 1 0 0 1 1-1zm-1 18v-12h20v12zm3-9h14v2h-14zm0 4h10v2h-10zm-2-11a1 1 0 1 1 1 1 1 1 0 0 1 -1-1zm3 0a1 1 0 1 1 1 1 1 1 0 0 1 -1-1zm3 0a1 1 0 1 1 1 1 1 1 0 0 1 -1-1z"
+            /></svg></a>
+      </div>
+    </aside>
+  </body>
 </html>
