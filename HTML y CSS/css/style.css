@@ -65,11 +65,39 @@ img {
 }.header ul {
     display: flex;
 }
-.header ul,
+.main-tools ul,
 .header .main-tools {
     display: flex;
-    gap: 40px;
+    gap: 25px;
     align-items: center;
+}
+#redes-sociales-ppal::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 17px;
+    background-color: rgba(209,209,209,.5);
+}
+.main-menu {
+    padding: 25px;
+}
+#features-bf-af::after,
+#features-bf-af::before {
+    content: "/";
+    display: inline-block;
+    color: rgba(209,209,209,.5);  
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 400; 
+}
+#news-bf-af::after,
+#news-bf-af::before {
+    content: "/";
+    display: inline-block;
+    color: rgba(209,209,209,.5);   
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 400;
 }
 .news {
     display: flex;
@@ -90,6 +118,16 @@ img {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 17px;
     color: #FFFFFF;
+}
+#news-recent-news::after {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background-color: #FF0000;
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-left: 16px;
 }
 .news > article {
     background-image: url("https://filmax.themerex.net/wp-content/uploads/2018/01/top-promo.jpg");
@@ -121,6 +159,7 @@ img {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 37px;
     color:#FFFFFF;
+    padding-bottom: 25px;
 }
 #news-data-paragraph {
     font-family: 'Roboto', sans-serif;
@@ -128,6 +167,7 @@ img {
     color:#A8A8A8;
     text-transform: none;
     font-weight: inherit;
+    padding-bottom: 25px;
 }
 #news-data-read-more {
     font-family: 'Roboto Condensed', sans-serif;
@@ -136,6 +176,7 @@ img {
     font-weight: inherit;
 }
 .slider {
+    position: relative;
     margin-top: -120px;
     margin-inline: auto;
     max-width: 1200px;
@@ -146,6 +187,21 @@ img {
 .slider > article {
     display: flex;
     gap: 20px;
+}
+.slider nav {
+    padding-bottom: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+#most-popular::after,
+#most-popular::before {
+    content: "/";
+    width: 20px;
+    height: 2px;
+    color: rgba(209,209,209,.5);
+    padding-left: 13px;
+    padding-right: 15px;    
 }
 .films {
     padding-bottom: 120px;
@@ -161,6 +217,17 @@ img {
     position: absolute;
     bottom: 15px;
     left: 15px;
+}
+.films div h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+    color:#FFFFFF;
+}
+.films article div a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color:#BDBDBD;
+    text-transform: none;
 }
 .samurai-principal {
     background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458);
@@ -193,29 +260,50 @@ img {
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 600px 300px 300px;
+    grid-template-rows: 300px 300px;
     grid-gap: 10px;
+    justify-content: center;
 }
 #principal {
-    grid-column: 1/span 2;
+    grid-column: 1/2;
     grid-row: 1/3;
-    max-width: 600px;
+    width: 570px;
+    height: 570px;
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #niños {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/2;
-    max-width: 300px;
+    width: 270px;
+    height: 270px;
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #hombre-con-camara {
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 1/2;
-    max-width: 300px;
+    width: 270px;
+    height: 270px;
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #padres-con-niño {
-    grid-column: 3/5;
+    grid-column: 2/4;
     grid-row: 2/3;
-    max-width: 600px;
+    width: 570px;
+    height: 270px;
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 footer {
     display: flex;
