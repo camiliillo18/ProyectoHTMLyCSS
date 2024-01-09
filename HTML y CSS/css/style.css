@@ -7,12 +7,15 @@
 :root {
     text-transform: uppercase;
 }
+html {
+    scroll-behavior: smooth;
+}
 li {
     list-style: none;
 }
 h3 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700px;
+    font-weight: 700;
     font-style: normal;
     text-decoration: none;
     font-size: 14px;
@@ -22,6 +25,7 @@ time {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 11px;
     color:#A8A8A8;
+    font-weight: 400;
 }
 .news aside article:hover div h1 {
     color:grey
@@ -53,7 +57,7 @@ img {
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: 0.06em;
 }
 .layout-width {
@@ -113,11 +117,13 @@ img {
     font-size: 16px;
     color: #FFFFFF;
     text-transform: none;
+    font-weight: 700;
 }
 #news-recent-news {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 17px;
     color: #FFFFFF;
+    font-weight: 700;
 }
 #news-recent-news::after {
     content: "";
@@ -160,20 +166,21 @@ img {
     font-size: 37px;
     color:#FFFFFF;
     padding-bottom: 25px;
+    font-weight: 700;
 }
 #news-data-paragraph {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color:#A8A8A8;
     text-transform: none;
-    font-weight: inherit;
+    font-weight: 400;
     padding-bottom: 25px;
 }
 #news-data-read-more {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 13px;
     color:#FFFFFF;
-    font-weight: inherit;
+    font-weight: 700;
 }
 .slider {
     position: relative;
@@ -183,6 +190,7 @@ img {
 }
 .slider ul {
     display: flex;
+    font-weight: 700;
 }
 .slider > article {
     display: flex;
@@ -222,6 +230,7 @@ img {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 17px;
     color:#FFFFFF;
+    font-weight: 700;
 }
 .films article div a {
     font-family: 'Roboto', sans-serif;
@@ -235,25 +244,119 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-.samurai {
     display: flex;
     justify-content: end;
 }
+.samurai {
+    display: grid;
+    align-content: center;
+    width: 50%;
+}
 .samurai div{
     width: 50%;
+    max-width: 600px;
+}
+.samurai h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 37px;
+    color:#1a1d24;
+    font-weight: 700;
+    padding-top: 26px;
+}
+.samurai h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    color:#737373;
+    font-weight: 700;
+}
+.samurai h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    color:#1a1d24;
+    font-weight: 700;
+}
+.samurai h3 strong {
+    margin-left: 20px;
+}
+.samurai p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    color:#737373;
+    font-weight: 400;
+    text-transform: none;
+    padding: 30px 0px 36px 0px;
+}
+#samurai-more-information {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    color: #E0041D;
+    font-weight: 700;
+}
+#samurai-more-information svg {
+    padding-right: 23px;
+    fill: #E0041D;
+}
+#samurai-trailer {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    color: #1a1d24;
+    font-weight: 700;
+    padding-left: 23px;
+}
+#samurai-trailer svg {
+    padding-right: 23px;
+    fill: #1a1d24;
 }
 .trending-films {
     display: flex;
+    gap: 0px;
+}
+#inferno {
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-27-copyright-485x665.jpg);
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 25%;
+}
+#band-of-brothers {
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-25-copyright-485x665.jpg);
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 25%;
+}
+#gladiator {
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-29-copyright-485x665.jpg);
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 25%;
+}
+#pirates-bay {
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg);
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 25%;
+}
+.trending-films h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 27px;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 16px 38px 10px;
 }
 .trending-films article {
     position: relative;
 }
-.trending-films div {
+.trending-films > article > div {
     position: absolute;
     bottom: 15px;
     left: 15px;
     color:white;
+}
+.trending-films > article > div > a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #BDBDBD;
+    text-transform: none;
+    padding-left: 38px;
 }
 .reviews {
     display: flex;
