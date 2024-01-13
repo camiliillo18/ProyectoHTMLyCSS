@@ -27,12 +27,6 @@ time {
     color:#A8A8A8;
     font-weight: 400;
 }
-.news aside article:hover div h1 {
-    color:grey
-}
-.news aside article:hover div time {
-    color:white
-}
 main {
     background-color: #f2f2f2;
 }
@@ -59,6 +53,7 @@ img {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.06em;
+    padding-block: 40px;
 }
 .layout-width {
     background-color: #1a1d24;
@@ -84,6 +79,22 @@ img {
     width: 1px;
     height: 17px;
     background-color: rgba(209,209,209,.5);
+}
+#redes-sociales-ppal-twitter svg:hover {
+    fill: #50abf1;
+    transition: 0.5s;
+}
+#redes-sociales-ppal-facebook svg:hover {
+    fill: #3a559f;
+    transition: 0.5s;
+}
+#redes-sociales-ppal-instagram svg:hover {
+    fill: #d35198;
+    transition: 0.5s;
+}
+#redes-sociales-ppal-youtube svg:hover {
+    fill: #cf2e2e;
+    transition: 0.5s;
 }
 .main-menu {
     padding: 25px;
@@ -156,6 +167,14 @@ img {
 .news aside p {
     margin-bottom: 25px;
 }
+.news aside article div h1:hover {
+    color:grey;
+    transition: 0.5s;
+}
+.news aside article div time:hover {
+    color:white;
+    transition: 0.5s;
+}
 .news-data {
     position: absolute;
     right: 110px;
@@ -184,12 +203,25 @@ img {
     font-size: 13px;
     color:#FFFFFF;
     font-weight: 700;
+    position: relative;
+    max-width: 90px;
+}
+#news-data-read-more:hover {
+    color:red;
+    transition: 0.5s;
+}
+#news-data-read-more svg {
+    position: absolute;
+    fill: red;
+    right: 0;
+    top: -1px;
 }
 .slider {
     position: relative;
     margin-top: -120px;
     margin-inline: auto;
     max-width: 1200px;
+    padding-bottom: 120px;
 }
 .slider ul {
     display: flex;
@@ -214,9 +246,6 @@ img {
     padding-left: 13px;
     padding-right: 15px;    
 }
-.films {
-    padding-bottom: 120px;
-}
 .films article {
     position: relative;
 }
@@ -240,6 +269,14 @@ img {
     font-size: 12px;
     color:#BDBDBD;
     text-transform: none;
+}
+.films h1:hover {
+    color:grey;
+    transition: 0.5s;
+}
+.films a:hover {
+    color:white;
+    transition: 0.5s;
 }
 .samurai-principal {
     background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458);
@@ -277,6 +314,7 @@ img {
     font-size: 13px;
     color:#1a1d24;
     font-weight: 700;
+    padding-top: 25px
 }
 .samurai h3 strong {
     margin-left: 20px;
@@ -298,6 +336,7 @@ img {
 #samurai-more-information svg {
     padding-right: 23px;
     fill: #E0041D;
+    vertical-align: middle;
 }
 #samurai-trailer {
     font-family: 'Roboto Condensed', sans-serif;
@@ -309,6 +348,29 @@ img {
 #samurai-trailer svg {
     padding-right: 23px;
     fill: #1a1d24;
+    vertical-align: middle;
+}
+#samurai-more-information:hover {
+    color:#b30519;
+    fill: #b30519;
+    transition: 0.5s;
+}
+#samurai-trailer:hover {
+    color:#b30519;
+    fill: #b30519;
+    transition: 0.5s;
+}
+#samurai-text {
+    position: relative;
+}
+#samurai-text h4::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 1px;
+    background-color: #FF0000;
+    margin-top: -34px;
+    position: absolute;
 }
 .trending-films {
     display: flex;
@@ -333,7 +395,7 @@ img {
     width: 25%;
 }
 #pirates-bay {
-    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg);
+    background-image: linear-gradient(to top, black 0%, transparent) url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg);
     background-repeat: no-repeat;
     height: 650px;
     width: 25%;
@@ -361,6 +423,23 @@ img {
     text-transform: none;
     padding-left: 38px;
 }
+.trending-films h3::before{
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 1px;
+    background-color: #f8b350;
+    margin-top: -31px;
+    position: absolute;
+}
+.trending-films h3:hover {
+    color:grey;
+    transition: 0.5s;
+}
+.trending-films > article > div > a:hover {
+    color:white;
+    transition: 0.5s;
+}
 .reviews {
     display: flex;
     background-color: #e0011a;
@@ -372,6 +451,7 @@ img {
 }
 .reviews article {
     text-align: center;
+    width: 370px;
 }
 .reviews img {
     height: 105px;
@@ -674,5 +754,31 @@ footer {
 #go-up {
     position: fixed;
     right: 2em;
-    bottom: 4em;
+    bottom: 2em;
+    fill: #FFFFFF;
+    border-color: #1a1d24;
+    background-color: #1a1d24;
+    max-width: 48px;
+    max-height: 48px;
+}
+#go-up:hover {
+    fill:red;
+    transition: 0.5s;
+}
+#menu-lateral-fijo {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    flex-direction: column;
+    gap: 2px;
+}
+#menu-lateral-fijo a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 68px;
+    height: 60px;
+    background-color: #E0041D;
 }
