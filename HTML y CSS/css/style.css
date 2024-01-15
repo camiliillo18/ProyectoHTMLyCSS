@@ -37,9 +37,13 @@ img {
     max-width: 100%;
     height: auto;
 }
+#header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 .header {
     display: flex;
-    position: sticky;
     justify-content: space-between;
     align-items: center;
     height: 80px;
