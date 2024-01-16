@@ -7,11 +7,11 @@
 :root {
     text-transform: uppercase;
 }
-html {
-    scroll-behavior: smooth;
-}
 li {
     list-style: none;
+}
+a {
+    cursor: pointer;
 }
 h3 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -32,9 +32,10 @@ main {
 }
 html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
 }
 img {
-    max-width: 100%;
     height: auto;
 }
 #header-sticky {
@@ -256,6 +257,16 @@ img {
 .films img {
     object-fit: cover;
     height: 100%;
+    width: 100%;
+}
+.films > article > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent);
 }
 .films div {
     position: absolute;
@@ -381,25 +392,25 @@ img {
     gap: 0px;
 }
 #inferno {
-    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-27-copyright-485x665.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-27-copyright-485x665.jpg);
     background-repeat: no-repeat;
     height: 650px;
     width: 25%;
 }
 #band-of-brothers {
-    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-25-copyright-485x665.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-25-copyright-485x665.jpg);
     background-repeat: no-repeat;
     height: 650px;
     width: 25%;
 }
 #gladiator {
-    background-image: url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-29-copyright-485x665.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-29-copyright-485x665.jpg);
     background-repeat: no-repeat;
     height: 650px;
     width: 25%;
 }
 #pirates-bay {
-    background-image: linear-gradient(to top, black 0%, transparent) url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg);
     background-repeat: no-repeat;
     height: 650px;
     width: 25%;
