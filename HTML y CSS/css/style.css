@@ -399,24 +399,32 @@ img {
 #inferno {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-27-copyright-485x665.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 650px;
     width: 25%;
 }
 #band-of-brothers {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-25-copyright-485x665.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 650px;
     width: 25%;
 }
 #gladiator {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-29-copyright-485x665.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 650px;
     width: 25%;
 }
 #pirates-bay {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 650px;
     width: 25%;
 }
@@ -569,6 +577,9 @@ img {
 #browse-more button:hover {
     background-color: #bb081c;
 }
+#bg-color-section-grid {
+    background-color: white;
+}
 .container {
     display: grid;
     grid-template-columns: 600px 300px 300px;
@@ -593,11 +604,19 @@ img {
 #principal:hover {
     background-image: radial-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent), url(https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright.jpg);
 }
-#principal div {
+#principal > div {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 38px 34px;
+}
+#principal > div > div a:hover{
+    fill: white;
+    transition: .5s;
+}
+#principal > div > div time:hover {
+    color: white;
+    transition: .5s;
 }
 #principal h1 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -621,11 +640,19 @@ img {
     background-size: cover;
     position: relative;
 }
-#niños div {
+#niños > div {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 25px 31px;
+}
+#niños > div > div a:hover{
+    fill: white;
+    transition: .5s;
+}
+#niños > div > div time:hover {
+    color: white;
+    transition: .5s;
 }
 #niños h1 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -649,11 +676,19 @@ img {
     background-size: cover;
     position: relative;
 }
-#hombre-con-camara div {
+#hombre-con-camara > div {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 25px 31px;
+}
+#hombre-con-camara > div > div a:hover{
+    fill: white;
+    transition: .5s;
+}
+#hombre-con-camara > div > div time:hover {
+    color: white;
+    transition: .5s;
 }
 #hombre-con-camara h1 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -677,11 +712,19 @@ img {
     background-size: cover;
     position: relative;
 }
-#padres-con-niño div {
+#padres-con-niño > div {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 38px 31px;
+}
+#padres-con-niño > div > div a:hover{
+    fill: white;
+    transition: .5s;
+}
+#padres-con-niño > div > div time:hover {
+    color: white;
+    transition: .5s;
 }
 #padres-con-niño h1 {
     font-family: 'Roboto Condensed', sans-serif;
