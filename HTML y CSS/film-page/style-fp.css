@@ -52,6 +52,10 @@
 } 
 .bg-color-section {
     background-color: white;
+    background-image: url(https://i.pinimg.com/originals/e7/85/d8/e785d84aa6c292ad933a4ee2e32dbe40.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .bg-color-section-2 {
     background-color: white;
@@ -1352,5 +1356,6 @@
         }
     }
 }
+
 
 
