@@ -913,6 +913,82 @@ footer {
 }
 .newsletter ul {
     display: flex;
+    padding-top: 40px;
+    gap: 25px;
+}
+.newsletter ul a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#twitter-footer {
+    width: 44px;
+    height: 44px;
+}
+#twitter-footer svg {
+    background-color: #1da1f3;
+    border-radius: 50%;
+    background-position: 50%;
+    left: 50%;
+    fill: white;
+    padding: 10px;
+}
+#twitter-footer a {
+    border-radius: 50%;
+    background-color: #1da1f3;
+    text-align: center;
+    vertical-align: middle;
+}
+#facebook-footer {
+    width: 44px;
+    height: 44px;
+}
+#facebook-footer svg {
+    background-color: #3a559f;
+    border-radius: 50%;
+    background-position: 50%;
+    left: 50%;
+    fill: white;
+    padding: 10px;
+}
+#facebook-footer a {
+    border-radius: 50%;
+    background-color: #3a559f;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+#instagram-footer {
+    width: 44px;
+    height: 44px;
+}
+#instagram-footer svg {
+    fill: white;
+    padding: 10px;
+    top: 50%;
+}
+#instagram-footer a {
+    border-radius: 50%;
+    background-color: #ce2e92;
+    text-align: center;
+    vertical-align: middle;
+}
+#youtube-footer {
+    width: 44px;
+    height: 44px;
+}
+#youtube-footer svg {
+    background-color: #e0011a;
+    background-position: 50%;
+    left: 50%;
+    fill: white;
+    padding: 10px;
+}
+#youtube-footer a {
+    border-radius: 50%;
+    background-color: #e0011a;
+    text-align: center;
+    vertical-align: middle;
 }
 .newsletter p {
     font-family: 'Roboto Condensed', sans-serif;
@@ -920,6 +996,25 @@ footer {
     color: #FFFFFF;
     font-weight: 700;
     margin-bottom: 17px;
+}
+.input {
+    position: relative;
+    font-size: 14px;
+}
+.input svg {
+    fill: white;
+    vertical-align: middle;
+}
+.newsletter .input::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #8b8b8b;
+    opacity: 0.3;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
 }
 .newsletter p::after {
     content: "";
