@@ -271,6 +271,22 @@ img {
     height: 100%;
     width: 100%;
 }
+.films > article > a::before {
+    content: "";
+    position: absolute;
+    background-image: url(/iconmonstr-media-control-48.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    border: 2px solid  red;
+}
 .films > article > a::after {
     content: "";
     position: absolute;
@@ -884,6 +900,10 @@ footer {
     font-size: 14px;
     color: #a8a8a8;
     text-transform: none;
+    transition: all .3s;
+}
+footer a:hover {
+    color: white;
 }
 .additional-links li {
     margin: 9px 0px;
