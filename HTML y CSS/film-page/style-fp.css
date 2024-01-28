@@ -260,13 +260,13 @@
             .scream {
                 grid-column: 1/2;
                 grid-row: 3/4;
-                background-image: url(/scream.png);
+                background-image: url(/images/scream.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 transition: all .3s;
                 &:hover {
-                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6)), url(/scream.png);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6)), url(/images/scream.png);
                 }
             }
         }

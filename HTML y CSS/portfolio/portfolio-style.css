@@ -1,8 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    text-decoration: none;
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+) {
+    all: unset;
+    display: revert;
 }
 @font-face {
     font-family: 'Courier Prime';
@@ -24,81 +24,11 @@
     font-family: 'Garamond';
     src: url(/fonts/EBGaramond-VariableFont_wght.ttf);
 }
-body {
-    margin: 0px;
-}
 li {
     list-style: none;
 }
-.menu-header {
-    .menu-ppal {
-        max-width: 1200px;
-        margin-inline: auto;
-        background-color: #212529;
-        padding-block: 15px;
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            li {
-                a{
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight: 700;
-                    font-style: normal;
-                    font-size: 16px;
-                    color: #ffffff;
-                    position: relative;
-                    &::after,
-                    &::before {
-                        position: absolute;
-                        opacity: 0;
-                        width: 0%;
-                        height: 2px;
-                        content: '';
-                        background: #FFF;
-                        transition: all 0.3s;
-                    }
-                    &::after {
-                        right: 0;
-                        bottom: 0;
-                    }
-                    &::before {
-                        left: 0;
-                        top: 0;
-                    }
-                    &:hover {
-                        color: #999999;
-                        &:before,
-                        &:after{
-                            opacity: 1;
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-            .more-information {
-                position: relative;
-                ul {
-                    text-align: center;
-                    display: none;
-                    transition: all .3s;
-                    background-color: #212529;
-                    width: 100%;
-                    li {
-                        padding-block: 10px;
-                        border: 1px solid rgb(19, 21, 24);
-                    }
-                }
-                &:hover {
-                    ul {
-                        position: absolute;
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
+a {
+    cursor: pointer;
 }
 .prueba {
     background-image: url(/codificacion-programas-informaticos-pantalla.jpg);
@@ -107,82 +37,152 @@ li {
     background-size: cover;
     padding-block: 80px;
     height: 700px;
-}
-.box-presentacion {
-    background-color: #343A40;
-    max-width: 1200px;
-    margin-inline: auto;
-    .presentacion{
-        padding: 60px;
-        h1 {
-            font-family: 'Courier Prime', sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 36px;
-            color: #ffffff;
-
-        }
-        p {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 800;
-            font-style: normal;
-            font-size: 84px;
-            padding-block: 30px;
-            color: #ffffff;
+    .menu-header {
+        .menu-ppal {
+            max-width: 1200px;
+            margin-inline: auto;
+            background-color: #212529;
+            padding-block: 15px;
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                li {
+                    a{
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-size: 16px;
+                        color: #ffffff;
+                        position: relative;
+                        &::after,
+                        &::before {
+                            position: absolute;
+                            opacity: 0;
+                            width: 0%;
+                            height: 2px;
+                            content: '';
+                            background: #FFF;
+                            transition: all 0.3s;
+                        }
+                        &::after {
+                            right: 0;
+                            bottom: 0;
+                        }
+                        &::before {
+                            left: 0;
+                            top: 0;
+                        }
+                        &:hover {
+                            color: #999999;
+                            &:before,
+                            &:after{
+                                opacity: 1;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .more-information {
+                    position: relative;
+                    ul {
+                        text-align: center;
+                        display: none;
+                        transition: all .3s;
+                        background-color: #212529;
+                        width: 100%;
+                        li {
+                            padding-block: 10px;
+                            border: 1px solid rgb(19, 21, 24);
+                        }
+                    }
+                    &:hover {
+                        ul {
+                            position: absolute;
+                            display: block;
+                        }
+                    }
+                }
+            }
         }
     }
-    .redes-sociales {
+    .box-presentacion {
+        background-color: #343A40;
         max-width: 1200px;
         margin-inline: auto;
-        padding-bottom: 60px;
-        ul{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            li {
-                text-align: center;
-                height: 45px;
-                width: 45px;
-                a {
-                    display: inline-block;
-                    width: 100%;
-                    height: 100%;
-                }
-                .linkedin{
-                    border-radius: 50%;
-                    background-color: #0a66c2;
+        .presentacion{
+            padding: 60px;
+            h1 {
+                font-family: 'Courier Prime', sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 36px;
+                color: #ffffff;
+
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 84px;
+                padding-block: 30px;
+                color: #ffffff;
+            }
+        }
+        .redes-sociales {
+            max-width: 1200px;
+            margin-inline: auto;
+            padding-bottom: 60px;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                li {
                     text-align: center;
-                    vertical-align: middle;
-                    transition: all .3s;
-                    svg {
-                        fill: white;
-                        padding: 10px;
+                    height: 45px;
+                    width: 45px;
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
                     }
-                    &:hover {
-                        background-color: #084f97;
+                    .linkedin{
+                        border-radius: 50%;
+                        background-color: #0a66c2;
+                        text-align: center;
+                        vertical-align: middle;
+                        transition: all .3s;
+                        svg {
+                            fill: white;
+                            padding: 10px;
+                        }
+                        &:hover {
+                            background-color: #084f97;
+                        }
                     }
-                }
-                .github {
-                    background-color: transparent;
-                    border-radius: 50%;
-                    transition: all .3s;
-                    &:hover {
-                        background-color: rgba(255, 255, 255, 0.514);
+                    .github {
+                        background-color: transparent;
+                        border-radius: 50%;
+                        transition: all .3s;
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.514);
+                        }
                     }
-                }
-                .gmail {
-                    border-radius: 50%;
-                    background-color: red;
-                    text-align: center;
-                    vertical-align: middle;
-                    transition: all .3s;
-                    svg {
-                        fill: #ffffff;
-                        padding: 10px;
-                    }
-                    &:hover {
-                        background-color: rgb(182, 0, 0);
+                    .gmail {
+                        border-radius: 50%;
+                        background-color: red;
+                        text-align: center;
+                        vertical-align: middle;
+                        transition: all .3s;
+                        svg {
+                            fill: #ffffff;
+                            padding: 10px;
+                        }
+                        &:hover {
+                            background-color: rgb(182, 0, 0);
+                        }
                     }
                 }
             }

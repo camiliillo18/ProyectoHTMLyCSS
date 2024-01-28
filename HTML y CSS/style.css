@@ -271,21 +271,25 @@ img {
     height: 100%;
     width: 100%;
 }
+.films > article:hover {
+        > a::before {
+        border: 2px solid rgba(255, 255, 255, 0.671);
+        }
+}
 .films > article > a::before {
     content: "";
-    position: absolute;
-    background-image: url(/iconmonstr-media-control-48.svg);
+    background-image: url(/images/iconmonstr-media-control-48.svg);
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 34px;
-    width: 34px;
+    height: 50px;
+    width: 50px;
     position: absolute;
     top: 50%;
     border-radius: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
-    border: 2px solid  red;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255,255,255,.15);
+    transition: all .3s;
 }
 .films > article > a::after {
     content: "";
@@ -604,7 +608,7 @@ img {
 }
 .comillas-img::after {
     content: "";
-    background-image: url(/iconmonstr-quote-right-filled.svg);
+    background-image: url(/images/iconmonstr-quote-right-filled.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     height: 34px;
@@ -954,6 +958,9 @@ footer a:hover {
     background-color: #1da1f3;
     text-align: center;
     vertical-align: middle;
+    &:hover {
+        background-color: #1a87ca;
+    }
 }
 #facebook-footer {
     width: 44px;
@@ -968,6 +975,9 @@ footer a:hover {
     background-color: #3a559f;
     text-align: center;
     vertical-align: middle;
+    &:hover {
+        background-color: #2e437e;
+    }
 }
 #instagram-footer {
     width: 44px;
@@ -982,6 +992,9 @@ footer a:hover {
     background-color: #ce2e92;
     text-align: center;
     vertical-align: middle;
+    &:hover {
+        background-color: #a72575;
+    }
 }
 #youtube-footer {
     width: 44px;
@@ -996,6 +1009,9 @@ footer a:hover {
     background-color: #e0011a;
     text-align: center;
     vertical-align: middle;
+    &:hover {
+        background-color: #b80217;
+    }
 }
 .newsletter p {
     font-family: 'Roboto Condensed', sans-serif;
